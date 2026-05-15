@@ -1,0 +1,35 @@
+.projects-page {
+  padding: 85px 8%;
+}
+
+.projects-header {
+  max-width: 850px;
+  margin-bottom: 42px;
+}
+
+.projects-header h1 {
+  font-size: 52px;
+  color: #f8fafc;
+  margin-bottom: 16px;
+}
+
+.projects-header p {
+  color: #cbd5e1;
+  font-size: 17px;
+}
+
+.projects-page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 800px) {
+  .projects-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-header h1 {
+    font-size: 40px;
+  }
+}
