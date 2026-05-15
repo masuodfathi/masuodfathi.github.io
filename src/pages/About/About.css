@@ -1,0 +1,162 @@
+.about-page {
+  padding: 85px 8%;
+}
+
+.about-hero {
+  max-width: 950px;
+  margin-bottom: 56px;
+}
+
+.about-hero h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  color: #f8fafc;
+  margin-bottom: 24px;
+}
+
+.about-hero p {
+  color: #cbd5e1;
+  font-size: 18px;
+  max-width: 850px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 85px;
+}
+
+.about-main {
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  padding: 32px;
+}
+
+.about-main h2 {
+  color: #f8fafc;
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.about-main h2:not(:first-child) {
+  margin-top: 36px;
+}
+
+.about-main p {
+  color: #cbd5e1;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.about-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-card {
+  background: linear-gradient(145deg, #1e293b, #111827);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  padding: 26px;
+}
+
+.about-card h3 {
+  color: var(--color-primary);
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.about-card ul {
+  padding-left: 20px;
+}
+
+.about-card li {
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  color: #cbd5e1;
+}
+
+.about-timeline {
+  background:
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 30%),
+    #111827;
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+  padding: 36px;
+}
+
+.timeline-list {
+  display: grid;
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 22px;
+  padding: 24px;
+  background-color: rgba(30, 41, 59, 0.75);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+}
+
+.timeline-item span {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.timeline-item h3 {
+  color: #f8fafc;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.timeline-item p {
+  color: #cbd5e1;
+}
+
+@media (max-width: 950px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-page {
+    padding: 65px 6%;
+  }
+
+  .about-hero h1 {
+    font-size: 34px;
+  }
+
+  .about-main,
+  .about-card,
+  .about-timeline {
+    padding: 24px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+}
